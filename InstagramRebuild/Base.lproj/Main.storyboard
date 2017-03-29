@@ -19,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="470" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bJz-cc-bed">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="455" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bJz-cc-bed">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PostCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="470" id="qk3-dR-Yyp" customClass="PostCell" customModule="InstagramRebuild" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="470"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PostCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="455" id="qk3-dR-Yyp" customClass="PostCell" customModule="InstagramRebuild" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="455"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qk3-dR-Yyp" id="MxA-6X-UJF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="455"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="44x-oF-zQD">
@@ -92,23 +92,23 @@
                                                     </constraints>
                                                     <state key="normal" backgroundImage="insta_save"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfn-Dv-Guv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfn-Dv-Guv">
                                                     <rect key="frame" x="16" y="365" width="343" height="43"/>
                                                     <string key="text">_dieDesignerin Heute habe ich mich wirklich geärgert #bumsmist . Wann kommt eigentlich der Sommerd man! Dafür ist diese Kirche sehr schön. #wunderbar</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOR 13 MINUTEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf4-UL-L8v">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="VOR 13 MINUTEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf4-UL-L8v">
                                                     <rect key="frame" x="16" y="416" width="85" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkN-5r-58N">
-                                                    <rect key="frame" x="8" y="436" width="359" height="30"/>
+                                                    <rect key="frame" x="8" y="437" width="359" height="15"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="N7H-E2-kEU"/>
+                                                        <constraint firstAttribute="height" constant="15" id="N7H-E2-kEU"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -125,12 +125,12 @@
                                                 <constraint firstItem="WuY-0W-H0v" firstAttribute="top" secondItem="wey-Bl-nno" secondAttribute="bottom" constant="16" id="EYV-3B-zzl"/>
                                                 <constraint firstItem="Hk8-oq-4ON" firstAttribute="leading" secondItem="44x-oF-zQD" secondAttribute="trailing" constant="8" id="FBR-GO-E4P"/>
                                                 <constraint firstItem="JkN-5r-58N" firstAttribute="leading" secondItem="MxA-6X-UJF" secondAttribute="leading" constant="8" id="FC7-BK-JNJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="JkN-5r-58N" secondAttribute="bottom" constant="3" id="FtO-d3-bu9"/>
                                                 <constraint firstItem="44x-oF-zQD" firstAttribute="top" secondItem="MxA-6X-UJF" secondAttribute="topMargin" id="GA5-80-f0e"/>
                                                 <constraint firstItem="Hk8-oq-4ON" firstAttribute="centerY" secondItem="44x-oF-zQD" secondAttribute="centerY" id="Gjb-27-3cb"/>
                                                 <constraint firstItem="01N-5r-LoJ" firstAttribute="trailing" secondItem="MxA-6X-UJF" secondAttribute="trailingMargin" constant="-8" id="IHO-AW-8jL"/>
                                                 <constraint firstAttribute="trailing" secondItem="JkN-5r-58N" secondAttribute="trailing" constant="8" id="U4H-RA-pE8"/>
                                                 <constraint firstItem="JkN-5r-58N" firstAttribute="top" secondItem="gf4-UL-L8v" secondAttribute="bottom" constant="8" id="VZx-DO-aWq"/>
-                                                <constraint firstAttribute="bottom" secondItem="JkN-5r-58N" secondAttribute="bottom" constant="3" id="Vqk-6U-4Ob"/>
                                                 <constraint firstItem="01N-5r-LoJ" firstAttribute="top" secondItem="wey-Bl-nno" secondAttribute="bottom" constant="16" id="WtE-oc-d57"/>
                                                 <constraint firstItem="gfn-Dv-Guv" firstAttribute="top" secondItem="01N-5r-LoJ" secondAttribute="bottom" constant="16" id="hCD-ge-PGo"/>
                                                 <constraint firstItem="9Yp-zX-Adi" firstAttribute="leading" secondItem="Jsh-9a-qZy" secondAttribute="trailing" constant="16" id="lwe-xQ-RCl"/>
@@ -185,9 +185,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z8J-Mz-tzJ" customClass="RootViewController" customModule="InstagramRebuild" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="RWY-v9-WhL"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ag5-xy-NgT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Ag5-xy-NgT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

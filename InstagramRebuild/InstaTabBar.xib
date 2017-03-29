@@ -30,23 +30,33 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insta_heart_clean" translatesAutoresizingMaskIntoConstraints="NO" id="spc-ar-8kc">
                             <rect key="frame" x="330" y="0.0" width="110" height="25"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass" translatesAutoresizingMaskIntoConstraints="NO" id="16R-aQ-PM0">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkE-OC-q3m">
                             <rect key="frame" x="440" y="0.0" width="110" height="25"/>
-                        </imageView>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="16R-aQ-PM0">
+                                    <rect key="frame" x="42.5" y="-0.5" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="1bR-ii-dSW"/>
+                                        <constraint firstAttribute="width" constant="25" id="RNn-0t-EuK"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="16R-aQ-PM0" firstAttribute="centerX" secondItem="rkE-OC-q3m" secondAttribute="centerX" id="DiZ-n8-Xlw"/>
+                                <constraint firstItem="16R-aQ-PM0" firstAttribute="centerY" secondItem="rkE-OC-q3m" secondAttribute="centerY" id="s5U-W9-GGf"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="16R-aQ-PM0" firstAttribute="top" secondItem="RDF-TW-xCM" secondAttribute="top" id="8Ma-8q-OMB"/>
                         <constraint firstAttribute="height" constant="25" id="Etw-G0-z72"/>
-                        <constraint firstAttribute="trailing" secondItem="16R-aQ-PM0" secondAttribute="trailing" id="J5f-rv-BOR"/>
                         <constraint firstAttribute="bottom" secondItem="mcY-0W-IdY" secondAttribute="bottom" id="LAm-zN-cAn"/>
                         <constraint firstItem="spc-ar-8kc" firstAttribute="top" secondItem="RDF-TW-xCM" secondAttribute="top" id="LlD-EI-5E7"/>
-                        <constraint firstItem="16R-aQ-PM0" firstAttribute="leading" secondItem="spc-ar-8kc" secondAttribute="trailing" id="Mcd-E2-ZWv"/>
                         <constraint firstItem="ecH-Au-e4J" firstAttribute="leading" secondItem="Sqm-s5-OgF" secondAttribute="trailing" id="NKq-0O-VQG"/>
                         <constraint firstItem="ecH-Au-e4J" firstAttribute="top" secondItem="RDF-TW-xCM" secondAttribute="top" id="Shv-xT-ehW"/>
                         <constraint firstItem="mcY-0W-IdY" firstAttribute="centerY" secondItem="RDF-TW-xCM" secondAttribute="centerY" id="TRP-jF-ZzU"/>
                         <constraint firstItem="Sqm-s5-OgF" firstAttribute="top" secondItem="RDF-TW-xCM" secondAttribute="top" id="TXs-hF-mpq"/>
                         <constraint firstItem="Sqm-s5-OgF" firstAttribute="leading" secondItem="mcY-0W-IdY" secondAttribute="trailing" id="TsL-DL-ef5"/>
-                        <constraint firstAttribute="bottom" secondItem="16R-aQ-PM0" secondAttribute="bottom" id="cSg-ht-Isu"/>
                         <constraint firstAttribute="bottom" secondItem="spc-ar-8kc" secondAttribute="bottom" id="dlY-7f-OgK"/>
                         <constraint firstAttribute="bottom" secondItem="ecH-Au-e4J" secondAttribute="bottom" id="eif-nR-2R6"/>
                         <constraint firstAttribute="bottom" secondItem="Sqm-s5-OgF" secondAttribute="bottom" id="gOk-9W-pfr"/>
@@ -84,6 +94,7 @@
     </objects>
     <resources>
         <image name="addphoto" width="71" height="71"/>
+        <image name="avatar" width="122" height="122"/>
         <image name="glass" width="64" height="64"/>
         <image name="home" width="66" height="66"/>
         <image name="insta_heart_clean" width="70" height="62"/>

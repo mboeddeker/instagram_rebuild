@@ -10,7 +10,15 @@ import UIKit
 
 class PostCell: UITableViewCell {
     
-    @IBOutlet weak var img_avatar: UIImageView!
+    @IBOutlet weak var img_avatar: UIImageView! {
+        didSet {
+            self.img_avatar.layer.borderWidth = 0
+            self.img_avatar.clipsToBounds = true
+            self.img_avatar.layer.borderColor = UIColor.black.cgColor
+            self.img_avatar.layer.cornerRadius = self.img_avatar.frame.height/2
+            self.img_avatar.clipsToBounds = true
+        }
+    }
     @IBOutlet weak var img_postImage: UIImageView!
     @IBOutlet weak var lbl_username: UILabel!
     @IBOutlet weak var lbl_description: UILabel!
