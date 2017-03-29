@@ -12,6 +12,10 @@
 		7C4564F11E8BBD6600CA4BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4564EF1E8BBD6600CA4BF7 /* Main.storyboard */; };
 		7C4564F31E8BBD6600CA4BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4564F21E8BBD6600CA4BF7 /* Assets.xcassets */; };
 		7C4564F61E8BBD6600CA4BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4564F41E8BBD6600CA4BF7 /* LaunchScreen.storyboard */; };
+		7C4564FF1E8BCA7F00CA4BF7 /* InstaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4564FE1E8BCA7F00CA4BF7 /* InstaTabBar.swift */; };
+		7C4565011E8BCA9200CA4BF7 /* InstaTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C4565001E8BCA9100CA4BF7 /* InstaTabBar.xib */; };
+		7C4565041E8BCDEF00CA4BF7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4565031E8BCDEF00CA4BF7 /* RootViewController.swift */; };
+		7C4565061E8BD07A00CA4BF7 /* TabBarRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4565051E8BD07A00CA4BF7 /* TabBarRootController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7C4564F21E8BBD6600CA4BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C4564F51E8BBD6600CA4BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C4564F71E8BBD6700CA4BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4564FE1E8BCA7F00CA4BF7 /* InstaTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaTabBar.swift; sourceTree = "<group>"; };
+		7C4565001E8BCA9100CA4BF7 /* InstaTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstaTabBar.xib; sourceTree = "<group>"; };
+		7C4565031E8BCDEF00CA4BF7 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		7C4565051E8BD07A00CA4BF7 /* TabBarRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarRootController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,32 @@
 			children = (
 				7C4564EB1E8BBD6600CA4BF7 /* AppDelegate.swift */,
 				7C4564ED1E8BBD6600CA4BF7 /* ViewController.swift */,
+				7C4565021E8BCDD700CA4BF7 /* controller */,
+				7C4564FD1E8BCA5500CA4BF7 /* views */,
 				7C4564EF1E8BBD6600CA4BF7 /* Main.storyboard */,
 				7C4564F21E8BBD6600CA4BF7 /* Assets.xcassets */,
 				7C4564F41E8BBD6600CA4BF7 /* LaunchScreen.storyboard */,
 				7C4564F71E8BBD6700CA4BF7 /* Info.plist */,
 			);
 			path = InstagramRebuild;
+			sourceTree = "<group>";
+		};
+		7C4564FD1E8BCA5500CA4BF7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7C4564FE1E8BCA7F00CA4BF7 /* InstaTabBar.swift */,
+				7C4565001E8BCA9100CA4BF7 /* InstaTabBar.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		7C4565021E8BCDD700CA4BF7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C4565031E8BCDEF00CA4BF7 /* RootViewController.swift */,
+				7C4565051E8BD07A00CA4BF7 /* TabBarRootController.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +155,7 @@
 				7C4564F61E8BBD6600CA4BF7 /* LaunchScreen.storyboard in Resources */,
 				7C4564F31E8BBD6600CA4BF7 /* Assets.xcassets in Resources */,
 				7C4564F11E8BBD6600CA4BF7 /* Main.storyboard in Resources */,
+				7C4565011E8BCA9200CA4BF7 /* InstaTabBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4564FF1E8BCA7F00CA4BF7 /* InstaTabBar.swift in Sources */,
 				7C4564EE1E8BBD6600CA4BF7 /* ViewController.swift in Sources */,
+				7C4565041E8BCDEF00CA4BF7 /* RootViewController.swift in Sources */,
 				7C4564EC1E8BBD6600CA4BF7 /* AppDelegate.swift in Sources */,
+				7C4565061E8BD07A00CA4BF7 /* TabBarRootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
