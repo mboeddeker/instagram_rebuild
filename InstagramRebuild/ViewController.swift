@@ -15,13 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         addBarButtons()
         addInstagramTitle()
-        
-        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 1000
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -66,18 +63,36 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PostCell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
+        if indexPath.row == 0 {
+            cell.loadItem(image: #imageLiteral(resourceName: "insta1"))
+        }
+        if indexPath.row == 1 {
+            cell.loadItem(image: #imageLiteral(resourceName: "insta2"))
+        }
+        if indexPath.row == 2 {
+            cell.loadItem(image: #imageLiteral(resourceName: "insta3"))
+        }
+        if indexPath.row == 3 {
+            cell.loadItem(image: #imageLiteral(resourceName: "insta4"))
+        }
         
+        cell.setNeedsUpdateConstraints()
+        cell.updateConstraintsIfNeeded()
+        cell.sizeToFit()
         return cell
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
+
+    
+
+    
+
+    
 }
 
 

@@ -33,4 +33,28 @@ class PostCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func loadItem(image: UIImage) {
+
+            // Screen Width
+            var screen_width = UIScreen.main.bounds.width
+            
+            // Ratio Width / Height
+            var ratio =  image.size.height / image.size.width
+            
+            // Calculated Height for the picture
+            let newHeight = screen_width * ratio
+            
+            // METHOD 1
+            self.constraint_MainImageHeight.constant = newHeight
+        
+            self.img_postImage.image = image
+            
+            // METHOD 2
+            //self.selfieImageView.bounds = CGRectMake(0,0,screen_width,newHeight)
+            
+        
+    }
+    
+        
+    
 }
