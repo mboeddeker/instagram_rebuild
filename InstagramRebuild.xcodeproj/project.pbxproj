@@ -16,6 +16,7 @@
 		7C4565011E8BCA9200CA4BF7 /* InstaTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C4565001E8BCA9100CA4BF7 /* InstaTabBar.xib */; };
 		7C4565041E8BCDEF00CA4BF7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4565031E8BCDEF00CA4BF7 /* RootViewController.swift */; };
 		7C4565061E8BD07A00CA4BF7 /* TabBarRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4565051E8BD07A00CA4BF7 /* TabBarRootController.swift */; };
+		7C4565081E8BEBB800CA4BF7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4565071E8BEBB800CA4BF7 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7C4565001E8BCA9100CA4BF7 /* InstaTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstaTabBar.xib; sourceTree = "<group>"; };
 		7C4565031E8BCDEF00CA4BF7 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		7C4565051E8BD07A00CA4BF7 /* TabBarRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarRootController.swift; sourceTree = "<group>"; };
+		7C4565071E8BEBB800CA4BF7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				7C4564FE1E8BCA7F00CA4BF7 /* InstaTabBar.swift */,
+				7C4565071E8BEBB800CA4BF7 /* PostCell.swift */,
 				7C4565001E8BCA9100CA4BF7 /* InstaTabBar.xib */,
 			);
 			name = views;
@@ -171,6 +174,7 @@
 				7C4565041E8BCDEF00CA4BF7 /* RootViewController.swift in Sources */,
 				7C4564EC1E8BBD6600CA4BF7 /* AppDelegate.swift in Sources */,
 				7C4565061E8BD07A00CA4BF7 /* TabBarRootController.swift in Sources */,
+				7C4565081E8BEBB800CA4BF7 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

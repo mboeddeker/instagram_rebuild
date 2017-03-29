@@ -26,7 +26,7 @@ class TabBarRootController: UITabBarController {
         // 1.need Controller Height
         let cHeight = self.view.frame.size.height
         let tabbar = InstaTabBar.instanceFromNib()
-        tabbar.frame = CGRect(x: 0, y: cHeight - 55, width: self.view.frame.width, height: 55)
+        tabbar.frame = CGRect(x: 0, y: cHeight - 60, width: self.view.frame.width, height: 60)
         self.view.addSubview(tabbar)
     }
     
